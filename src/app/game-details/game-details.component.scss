@@ -18,7 +18,22 @@
       }
       .value-text {
         fill: white;
+        font-weight: 700;
+        font-size: 24px;
       }
+    }
+  }
+  .game-gauge {
+    position: absolute;
+    right: 0;
+    width: 100px;
+    top: 0;
+
+    &-label {
+      font-size: 20px;
+      color: blueviolet;
+      position: relative;
+      bottom: 60px;
     }
   }
 }

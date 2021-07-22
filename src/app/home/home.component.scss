@@ -1,7 +1,7 @@
 .filters {
   max-width: 1200px;
   margin: 20px auto;
-  padding-left:20px
+  padding-left: 270px;
 
 }
 ::ng-deep {
@@ -67,16 +67,16 @@
       right:0;
       margin: 0 auto;
       height: 172px;
+      width: 280px;
     }
     &-description {
       padding:20px;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      heigth:157px;
     }
     &-name {
-      color:white;
+      color:black;
       font-weight: 700;
       margin-bottom:20px;
       white-space:normal;
@@ -84,9 +84,13 @@
     }
     &-plaforms {
       display: flex;
+      color:black;
+      filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+
     }
     &-platform {
       width: 20px;
+      color:black;
     }
   }
 }

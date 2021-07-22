@@ -15,7 +15,14 @@ interface Genre {
   name: string;
 }
 
+export interface EsrbRating {
+  name: string;
+  id: string;
+
+}
+
 export interface Game {
+  esrb_rating: Array<EsrbRating>;
   metacritic_url: string;
   genres: Array<Genre>;
   released: string;
@@ -25,7 +32,7 @@ export interface Game {
   name: string;
   website: string;
   description: string;
-  platforms: Array<ParentPlatform>
+  platforms: Array<ParentPlatform>;
   ratings: Array<Rating>;
 }
 

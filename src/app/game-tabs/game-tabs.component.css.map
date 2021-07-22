@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACE,UAAO;EACL,UAAU,EAAE,QAAQ;EACpB,KAAK,EAAC,KAAK;EACX,UAAU,EAAC,IAAI",
+"sources": ["game-tabs.component.scss"],
+"names": [],
+"file": "game-tabs.component.css"
+}

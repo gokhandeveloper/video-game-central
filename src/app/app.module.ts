@@ -17,6 +17,9 @@ import {HttpService} from "./services/http.service";
 import {CredentialsService} from "./services/credentials.service";
 import { GameDetailsComponent } from './game-details/game-details.component';
 import {GaugeModule} from "angular-gauge";
+import { GameTabsComponent } from './game-tabs/game-tabs.component';
+import {MatTabsModule} from "@angular/material/tabs";
+import {MatIconModule} from "@angular/material/icon";
 
 
 @NgModule({
@@ -24,7 +27,8 @@ import {GaugeModule} from "angular-gauge";
     AppComponent,
     SearchBarComponent,
     HomeComponent,
-    GameDetailsComponent
+    GameDetailsComponent,
+    GameTabsComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +39,9 @@ import {GaugeModule} from "angular-gauge";
     MatFormFieldModule,
     MatSelectModule,
     HttpClientModule,
-    GaugeModule.forRoot()
+    GaugeModule.forRoot(),
+    MatTabsModule,
+    MatIconModule
   ],
   providers: [AppRouting,HttpService,CredentialsService, {
     provide: HTTP_INTERCEPTORS,
