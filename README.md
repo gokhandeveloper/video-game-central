@@ -1,5 +1,8 @@
 # VideoGameCentral
-
+This project connects to a https://rawg.io/ public game API and displays it.
+Get your public api key here:
+https://rawg.io/
+Also get the middleware api from https://rapidapi.com/
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
 
 ## Development server
