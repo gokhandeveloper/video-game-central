@@ -1,12 +1,24 @@
+//.dark-primary-color    { background: #512DA8; }
+//.default-primary-color { background: #673AB7; }
+//.light-primary-color   { background: #D1C4E9; }
+//.text-primary-color    { color: #FFFFFF; }
+//.accent-color          { background: #536DFE; }
+//.primary-text-color    { color: #212121; }
+//.secondary-text-color  { color: #757575; }
+//.divider-color         { border-color: #BDBDBD; }
+
+
 .filters {
   max-width: 1200px;
   margin: 20px auto;
-  padding-left: 270px;
+  top:50px;
+  z-index: 9999;
+  position: absolute;
 
 }
 ::ng-deep {
   .mat-form-field-infix{
-    background-color: cornflowerblue!important;
+    background-color: #512DA8!important;
   }
   .mat-select-value,
   .mat-select-arrow,
@@ -34,16 +46,21 @@
   .games {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     justify-content: center;
-    margin: 20px auto;
+    /* margin: 20px auto; */
+    background: rgb(52,52,50);
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    right: 0px;
 
   }
   .game {
     width:280px;
     margin:10px;
     height:330px;
-    background-color: bisque;
+    background-color: #FFFFFF;
     transition-duration: 0.3s;
     border-radius: 3px;
     cursor: pointer;
@@ -54,7 +71,7 @@
 
     }
     &-thumb-container {
-      background-color: brown;
+      background-color: #512da8;
       position:relative;
       height:180px;
       color:white;
@@ -90,7 +107,7 @@
     }
     &-platform {
       width: 20px;
-      color:black;
+      filter: invert(.75);
     }
   }
 }
