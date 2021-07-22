@@ -15,13 +15,16 @@ import {HttpHeaderInterceptor} from "./interceptors/http-header-interceptor.serv
 import {HttpErrorsInterceptor} from "./interceptors/http-errors-interceptor";
 import {HttpService} from "./services/http.service";
 import {CredentialsService} from "./services/credentials.service";
+import { GameDetailsComponent } from './game-details/game-details.component';
+import {GaugeModule} from "angular-gauge";
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchBarComponent,
-    HomeComponent
+    HomeComponent,
+    GameDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import {CredentialsService} from "./services/credentials.service";
     AppRouting,
     MatFormFieldModule,
     MatSelectModule,
-    HttpClientModule
+    HttpClientModule,
+    GaugeModule.forRoot()
   ],
   providers: [AppRouting,HttpService,CredentialsService, {
     provide: HTTP_INTERCEPTORS,
