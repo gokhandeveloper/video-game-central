@@ -44,4 +44,4 @@ testem.log
 .DS_Store
 Thumbs.db
 #credentials
-/src/app/services/credentials.service.ts
+src/app/services/credentials.service.ts
